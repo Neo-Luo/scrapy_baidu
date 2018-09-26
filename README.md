@@ -9,19 +9,19 @@
 
 ### jparser
 
- - 安装
+ - 安装  
 `pip install jparser`
-- 使用
+- 使用  
 可参考官网：https://pypi.org/project/jparser/0.0.10/
 
 
 ### url2io
- - 下载安装
- 即下载本项目中的url2io.py文件。
+ - 下载安装  
+ 即下载本项目中的url2io.py文件。  
  也可以到该其相应github主页下载最新版：https://github.com/url2io/url2io-python-sdk/
- - 官网注册，获取token
+ - 官网注册，获取token  
  http://url2io.applinzi.com/
-- 使用
+- 使用  
 https://github.com/url2io/url2io-python-sdk/
 
 ### 运行
