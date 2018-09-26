@@ -23,6 +23,9 @@
 - 使用
 https://github.com/url2io/url2io-python-sdk/
 
+### 运行
+` python scrapy_baidu.py `
+
 ### 抓取结果展示
 record_id,query,title,abstract,link,content    
 1,消息面看贸易战进入持久战当下只能说是短暂靴子落地美公布关税豁免程序,贸易战后操作思路_烽火通信(600498)聊吧_赢家聊吧【股吧】,"贸易战既然已经开始,时间上持久战的概率较大。而当下也只能说是短暂的靴子落地,随时还有再起烽火可能,美国公布了个关税豁免程序但那只是正常程序,切勿就...",http://www.baidu.com/link?url=fJ5P3mDdJxPJPBMMaMXI66n0_l72H4Q-ouH3LrM6jwrPW3_Eknpa2LfH_fk3zh_29wqXlDRCR9--xoHr1YMLLa, 周五盘面情绪波动过激主要来源于中美贸易……短线宜做逆风的墙头草，即再跌不悲观，反弹则不能盲目乐观，操作上忌追涨杀跌。把控仓位、跟随市场热点小打小闹为好。
