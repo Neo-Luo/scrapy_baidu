@@ -68,8 +68,8 @@ def main():
                 print(query)
                 if(len(query)<8):
                     PAGE_NUM = 1
-                else:
-                    PAGE_NUM = 1
+#                 else:
+#                     PAGE_NUM = 1
                 
                 for k in range(0, PAGE_NUM):
                     try:
