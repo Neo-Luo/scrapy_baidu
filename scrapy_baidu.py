@@ -26,7 +26,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100101 Firefox/22.0'
 }
 
-SAVE_DIR = 'scrapy_data'
+SAVE_DIR = 'scrapy_data' #抓取数据存储路径
 if not (os.path.isdir(SAVE_DIR)):
     os.makedirs(SAVE_DIR)
     
@@ -124,7 +124,7 @@ def main():
                             except Exception as err:
                                 print(err)
                         writer.writerows(data)
-                        print("第" + str(k+1) + "页完成")
+                        print("Page: " + str(k+1) + " finished!")
 
                     except Exception as err:
                         print(err)
