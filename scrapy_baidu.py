@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-
+import os
 import requests
 import time
 import csv
@@ -8,7 +8,6 @@ from bs4 import BeautifulSoup
 import urllib2
 from jparser import PageModel
 import url2io
-
 
 # 设置默认encoding方式
 import sys
@@ -27,7 +26,10 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100101 Firefox/22.0'
 }
 
-
+SAVE_DIR = 'scrapy_data'
+if not (os.path.isdir(SAVE_DIR)):
+    os.makedirs(SAVE_DIR)
+    
 def main():
     reader = csv.reader(open( 'query_text.csv', 'rb'))
     index = 0
@@ -35,7 +37,7 @@ def main():
         record_id = 1
         print('---------%i---------' % index)
         query_all = line[0]
-        csvfile = open( 'scrapy_data/scrapy_result_%i.csv' % (index), 'wb')
+        csvfile = open( SAVE_DIR +'/scrapy_result_%i.csv' % (index), 'wb')
         writer = csv.writer(csvfile)
         data = ['record_id','query','title','abstract','link','content']
         writer.writerows([data])
