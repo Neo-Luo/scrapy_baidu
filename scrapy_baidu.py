@@ -15,7 +15,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 PAGE_NUM = 2
-token = 'CHgsuVPJQcO56K0ZGpT8Qw'
+token = 'xxxx' #之前我自己的token不再公开，请到url2io官网注册获取token
 api = url2io.API(token)
 
 headers = {
